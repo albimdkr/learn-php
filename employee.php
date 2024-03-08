@@ -28,6 +28,28 @@ Class Employee {
     public function getSalary() {
         return $this->salary;
     }
+}
+
+// Manager Extend Employee
+class Manager extends Employee {
+    private $department;
+
+    public function __construct($name , $position, $salary, $department) {
+        parent::__construct($name, $position, $salary);
+        $this->department = $department;
+    }
+
+    public function getDepartment(){
+        return $this->department;
+    }
+}
+
+// Staff
+Class Staff extends Employee {
 
 }
+
+// Crete Object Employee 
+$manager = new Manager("John Max", "Manager", 500000, "Human Resource");
+$staff = new Staff ("Alex", "Staff", 300000);
 ?>
