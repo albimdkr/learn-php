@@ -52,4 +52,8 @@ Class Staff extends Employee {
 // Crete Object Employee 
 $manager = new Manager("John Max", "Manager", 500000, "Human Resource");
 $staff = new Staff ("Alex", "Staff", 300000);
+
+// Print
+echo "informasi Manager: " . $manager->getInfo() . ", Department: " . $manager->getDepartment() . "<br>";
+echo "Informasi Staff: " . $staff->getInfo() . "<br>";
 ?>
